@@ -1,8 +1,7 @@
- <img src="https://storage.googleapis.com/ultralytics/logo/logoname1000.png" width="160">
 
 # Introduction
 
-This directory contains Bing image-scraping software forked from https://github.com/hardikvasa/google-images-download, and updated by Ultralytics LLC, and **is freely available for redistribution under the MIT license**. For more information please visit https://www.ultralytics.com.
+This directory contains Bing image-scraping software forked from https://github.com/ultralytics/google-images-download, and updated by OHLC.AI, and **is freely available for redistribution under the MIT license**.
 
 # Requirements
 
@@ -46,12 +45,11 @@ Downloading images...
 10/10 http://www.pouted.com/wp-content/uploads/2015/03/honeybee_06_by_wings_of_light-d3fhfg1.jpg 
 Done with 0 errors in 37.1s. All images saved to /Users/glennjocher/PycharmProjects/google-images-download/images
 ```
-<img src="https://user-images.githubusercontent.com/26833433/75287228-dcf2ca80-57ce-11ea-9557-cc13abaff453.jpg" width="">
 
 # Cite
 
-See https://github.com/hardikvasa/google-images-download.
+See https://github.com/hardikvasa/google-images-download
 
 # Contact
 
-**Issues should be raised directly in the repository.** For additional questions or comments please email Glenn Jocher at glenn.jocher@ultralytics.com or visit us at https://contact.ultralytics.com.
+**Issues should be raised directly in the repository.** For additional questions or comments please email me at mohit@ohlc.ai
