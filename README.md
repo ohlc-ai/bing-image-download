@@ -24,7 +24,6 @@ Run this on Google colab line by line
 ```
 It should show output as **/content**. That's the directory you're currently in.
 
-Now run
 ```bash
 !git clone https://github.com/ohlc-ai/bing-images-download.git
 ```
@@ -34,23 +33,21 @@ Run
 ```bash
 %cd /content/bing-images-download
 ```
-
-Now you are in repo's directory.
+Voila! You are in repo's directory.
 
 ```bash
 pip install -r requirements.txt
 ```
 Now that all the required libraries are installed, it's time to install Chromium driver in your Colab notebook.
 
-Run
 ```bash
 !apt install chromium-chromedriver
 ```
-And, that's it! Now, we will mount our Google drive on this notebook so that images could be directly downloaded. To do that, click on the Google Drive icon. It will ask for permission to mount the drive. Click on **Connect to Google Drive** to grant access.
+And, that's it! We will now mount our Google drive on this notebook so that images could be directly downloaded. To do that, click on Google Drive icon. It will ask for permission to mount the drive. Click on **Connect to Google Drive** to grant access.
 
 Once Google Drive is mounted, you will see another directory - **drive**. Expand drive folder and you will probably have **My Drive** folder in it. You can create a new directory inside drive folder or in My Drive. I have created a new folder within My Drive to save images. I have named the folder dataset.
 
-Now, we need to change our directory since the script saves all the images in current directory/images. Copy path to the folder in which you need to download the images. For me, it's **/content/drive/My Drive/dataset**, so I will run
+We should now change our directory since the script saves all the images in current directory/images. Copy path to the folder in which you need to download the images. For me, it's **/content/drive/My Drive/dataset**, so I will run
 
 ```bash
 %cd /content/drive/My\ Drive/dataset
@@ -68,7 +65,7 @@ And, we're good to go!
 ```
  Download up to `--limit` images supplying either a `--url`
  
-You can change --limit from 4 to any number you want. That would set the limit for number of images to be downloaded per search term. Note that error-producing images may be skipped.
+You can change --limit from 10 to any number you want. That would set the limit for number of images to be downloaded per search term. Note that error-producing images may be skipped.
 
 Here's how the output will look like:
 
