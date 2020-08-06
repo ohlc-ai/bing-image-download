@@ -242,7 +242,7 @@ class googleimagesdownload:
             start_line = s.find('class="dtviD"')
             start_content = s.find('href="', start_line + 1)
             end_content = s.find('">', start_content + 1)
-            url_item = "https://www.google.com" + str(s[start_content + 6:end_content])
+            url_item = "https://www.bing.com/images/search?q=" + str(s[start_content + 6:end_content])
             url_item = url_item.replace('&amp;', '&')
 
             start_line_2 = s.find('class="dtviD"')
@@ -331,7 +331,7 @@ class googleimagesdownload:
 
     def similar_images(self, similar_images):
         try:
-            searchUrl = 'https://www.google.com/searchbyimage?site=search&sa=X&image_url=' + similar_images
+            searchUrl = 'https://www.bing.com/images/search?q=' + similar_images
             headers = {}
             headers[
                 'User-Agent'] = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
@@ -343,7 +343,7 @@ class googleimagesdownload:
             l2 = content.find('&', l1)
             urll = content[l1:l2]
 
-            newurl = "https://www.google.com/search?tbs=sbi:" + urll + "&site=search&sa=X"
+            newurl = "https://www.bing.com/images/search?q="
             req2 = urllib.request.Request(newurl, headers=headers)
             resp2 = urllib.request.urlopen(req2)
             l3 = content.find('/search?sa=X&amp;q=')
@@ -436,15 +436,15 @@ class googleimagesdownload:
         elif similar_images:
             print(similar_images)
             keywordem = self.similar_images(similar_images)
-            url = 'https://www.google.com/search?q=' + keywordem + '&espv=2&biw=1366&bih=667&site=webhp&source=lnms&tbm=isch&sa=X&ei=XosDVaCXD8TasATItgE&ved=0CAcQ_AUoAg'
+            url = 'https://www.bing.com/images/search?q=' + keywordem
         elif specific_site:
-            url = 'https://www.google.com/search?q=' + quote(
+            url = 'https://www.bing.com/images/search?q=' + quote(
                 search_term.encode(
-                    'utf-8')) + '&as_sitesearch=' + specific_site + '&espv=2&biw=1366&bih=667&site=webhp&source=lnms&tbm=isch' + params + '&sa=X&ei=XosDVaCXD8TasATItgE&ved=0CAcQ_AUoAg'
+                    'utf-8')) + '&as_sitesearch=' + specific_site 
         else:
-            url = 'https://www.google.com/search?q=' + quote(
+            url = 'https://www.bing.com/images/search?q=' + quote(
                 search_term.encode(
-                    'utf-8')) + '&espv=2&biw=1366&bih=667&site=webhp&source=lnms&tbm=isch' + params + '&sa=X&ei=XosDVaCXD8TasATItgE&ved=0CAcQ_AUoAg'
+                    'utf-8'))
 
         # safe search check
         if safe_search:
