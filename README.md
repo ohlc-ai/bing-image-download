@@ -106,4 +106,4 @@ See https://github.com/ultralytics/google-images-download
 
 ### Contact
 
-**Issues should be raised directly in the repository.** For additional questions or comments please email me at mohit@ohlc.ai
+**Issues should be raised directly in the repository.**
