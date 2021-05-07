@@ -1,7 +1,6 @@
 # Bing Images Download
 
-
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)
+<img src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/2777760/Bing_logo_orange_RGB.1379355070.png" width="200px">
 
 
 
